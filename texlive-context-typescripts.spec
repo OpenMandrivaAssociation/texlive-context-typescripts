@@ -1,3 +1,9 @@
+# revision 23167
+# category ConTeXt
+# catalog-ctan /macros/context/contrib/context-typescripts
+# catalog-date 2011-01-15 19:42:27 +0100
+# catalog-license gpl2
+# catalog-version undef
 Name:		texlive-context-typescripts
 Version:	20110115
 Release:	1
@@ -148,6 +154,7 @@ and Corbel; and Vollkorn.
 %{_texmfdistdir}/tex/context/third/typescripts/type-vollkorn.mkii
 %{_texmfdistdir}/tex/context/third/typescripts/type-vollkorn.mkiv
 %doc %{_texmfdistdir}/doc/context/third/typescripts/README
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -158,3 +165,5 @@ and Corbel; and Vollkorn.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
