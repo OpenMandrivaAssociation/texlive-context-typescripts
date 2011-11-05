@@ -15,10 +15,10 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-typescrip
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-typescripts.doc.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
-Requires:	texlive-context
+Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-kpathsea
+Requires(post):	texlive-context
 Conflicts:	texlive-texmf <= 20110705-3
-Requires(post):	texlive-context.bin
 
 %description
 Supported font families are Accanthis; Adobe Minion, Myriad,
@@ -47,8 +47,8 @@ and Corbel; and Vollkorn.
     %_texmf_mktexlsr_pre
 
 %post
-    %_texmf_mtxrun_post
     %_texmf_mktexlsr_post
+    %_texmf_mtxrun_post
 
 %preun
     if [ $1 -eq 0 ]; then
@@ -58,8 +58,8 @@ and Corbel; and Vollkorn.
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mtxrun_post
 	%_texmf_mktexlsr_post
+	%_texmf_mtxrun_post
     fi
 
 #-----------------------------------------------------------------------
