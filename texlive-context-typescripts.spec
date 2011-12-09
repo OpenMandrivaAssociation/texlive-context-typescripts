@@ -1,4 +1,4 @@
-# revision 24492
+# revision 24735
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-typescripts
 # catalog-date 2011-11-04 08:37:45 +0100
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-context-typescripts
 Version:	20111104
-Release:	1
+Release:	2
 Summary:	Small modules to load various fonts for use in ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-typescripts
@@ -18,8 +18,6 @@ BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 Requires(post):	texlive-context
-Requires:	texlive-context
-Conflicts:	texlive-texmf <= 20110705-3
 
 %description
 The package provides 32 files offering interfaces to publicly
@@ -27,23 +25,19 @@ available fonts (some files contain support for several fonts
 from the same foundry).
 
 %pre
-    %_texmf_mtxrun_pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
-    %_texmf_mtxrun_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mtxrun_pre
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
-	%_texmf_mtxrun_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -94,6 +88,7 @@ from the same foundry).
 %{_texmfdistdir}/tex/context/third/typescripts/type-miso.mkiv
 %{_texmfdistdir}/tex/context/third/typescripts/type-museo.mkii
 %{_texmfdistdir}/tex/context/third/typescripts/type-museo.mkiv
+%{_texmfdistdir}/tex/context/third/typescripts/type-office.mkiv
 %{_texmfdistdir}/tex/context/third/typescripts/type-pigiarniq.mkii
 %{_texmfdistdir}/tex/context/third/typescripts/type-pigiarniq.mkiv
 %{_texmfdistdir}/tex/context/third/typescripts/type-sabon.mkii
