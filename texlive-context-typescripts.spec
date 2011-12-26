@@ -1,4 +1,4 @@
-# revision 24735
+# revision 24879
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-typescripts
 # catalog-date 2011-11-04 08:37:45 +0100
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-context-typescripts
 Version:	20111104
-Release:	2
+Release:	3
 Summary:	Small modules to load various fonts for use in ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-typescripts
@@ -66,6 +66,7 @@ from the same foundry).
 %{_texmfdistdir}/tex/context/third/typescripts/type-diavlo.mkiv
 %{_texmfdistdir}/tex/context/third/typescripts/type-droid.mkii
 %{_texmfdistdir}/tex/context/third/typescripts/type-droid.mkiv
+%{_texmfdistdir}/tex/context/third/typescripts/type-ernestine.mkiv
 %{_texmfdistdir}/tex/context/third/typescripts/type-fertigo.mkii
 %{_texmfdistdir}/tex/context/third/typescripts/type-fertigo.mkiv
 %{_texmfdistdir}/tex/context/third/typescripts/type-fontin.mkii
