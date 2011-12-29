@@ -24,16 +24,8 @@ The package provides 32 files offering interfaces to publicly
 available fonts (some files contain support for several fonts
 from the same foundry).
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -109,7 +101,6 @@ from the same foundry).
 %{_texmfdistdir}/tex/context/third/typescripts/type-vollkorn.mkii
 %{_texmfdistdir}/tex/context/third/typescripts/type-vollkorn.mkiv
 %doc %{_texmfdistdir}/doc/context/third/typescripts/README
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -120,5 +111,3 @@ from the same foundry).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
