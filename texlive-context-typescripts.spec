@@ -1,12 +1,12 @@
-# revision 24879
+# revision 25411
 # category ConTeXt
 # catalog-ctan /macros/context/contrib/context-typescripts
-# catalog-date 2011-11-04 08:37:45 +0100
+# catalog-date 2012-02-16 15:23:58 +0100
 # catalog-license gpl2
 # catalog-version undef
 Name:		texlive-context-typescripts
-Version:	20111104
-Release:	4
+Version:	20120216
+Release:	1
 Summary:	Small modules to load various fonts for use in ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-typescripts
@@ -20,9 +20,9 @@ Requires(post):	texlive-kpathsea
 Requires(post):	texlive-context
 
 %description
-The package provides 32 files offering interfaces to publicly
-available fonts (some files contain support for several fonts
-from the same foundry).
+The package provides files offering interfaces to 33 publicly
+available fonts (or collections of fonts from the same
+foundry); each is available in a .mkii and a .mkiv version.
 
 %post
     %{_sbindir}/texlive.post
