@@ -111,3 +111,33 @@ foundry); each is available in a .mkii and a .mkiv version.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120216-1
++ Revision: 779435
+- Update to latest release.
+
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111104-4
++ Revision: 750531
+- Rebuild to reduce used resources
+
+* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111104-3
++ Revision: 745203
+- texlive-context-typescripts
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111104-2
++ Revision: 739714
+- texlive-context-typescripts
+
+* Thu Nov 10 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111104-1
++ Revision: 729673
+- texlive-context-typescripts
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110115-1
++ Revision: 718145
+- texlive-context-typescripts
+- texlive-context-typescripts
+- texlive-context-typescripts
+- texlive-context-typescripts
+
