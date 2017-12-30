@@ -5,8 +5,8 @@
 # catalog-license gpl2
 # catalog-version undef
 Name:		texlive-context-typescripts
-Version:	20120216
-Release:	9
+Version:	20170414
+Release:	1
 Summary:	Small modules to load various fonts for use in ConTeXt
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-typescripts
