@@ -3,7 +3,7 @@ Version:	60422
 Release:	2
 Summary:	Small modules to load various fonts for use in ConTeXt
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/context/contrib/context-typescripts
+URL:		https://www.ctan.org/tex-archive/macros/context/contrib/context-typescripts
 License:	GPL2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-typescripts.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/context-typescripts.doc.r%{version}.tar.xz
